@@ -26,3 +26,21 @@ Make changes to the following variables
 ### Keymanagement.tf
 * AWS Principal - to allow access to the account and user ID with permissions to create and administer KMS keys
 
+### Run the following Terraform commands
+1. Initialize Terraform backend
+```Bash
+terraform init
+```
+2. Validate the Terraform configuration
+```Bash
+terraform validate
+```
+3. Run the Terraform plan to view the resources that will be created
+```Bash
+terraform plan
+```
+4. Run Terraform apply to create the needed resources and type 'yes' to proceed
+```Bash
+terraform apply
+```
+
