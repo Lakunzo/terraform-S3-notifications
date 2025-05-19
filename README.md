@@ -9,3 +9,8 @@ This project is an alert notification system that send an email to the bucket ow
 * Cloud Provider - AWS
 * Services Used - S3 bucket, IAM, Lambda, SNS
 * Programming Language - Python 3.11
+
+## Setup Guide
+### Clone the Repository
+```bash
+git clone https://github.com/
