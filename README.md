@@ -15,4 +15,10 @@ This project is an alert notification system that send an email to the bucket ow
 ```bash
 git clone https://github.com/Lakunzo/terraform-S3-notifications.git
 ```
-
+### Modify the variables.tf and iamrole.tf
+#### Variables.tf
+Make changes to the following variables
+* aws-access-key
+* aws-secret-key
+* aws-token-key (Optional)
+* sns-endpoint
