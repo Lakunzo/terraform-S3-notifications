@@ -3,3 +3,9 @@
 ## Project Overview
 This project is an alert notification system that send an email to the bucket owner when an object is uploaded to an S3 bucket. It leverages Amazon S3, IAM, Lambda with Python, and SNS topics. The details of the notification include - the bucket name, file name, file size, upload date and time (UTC) and AWS account used to upload the object.
 
+![Archtiectural Diagram](https://i.postimg.cc/zDRyc6Fw/s3notification-drawio.png)
+
+## Technologies Used
+* Cloud Provider - AWS
+* Services Used - S3 bucket, IAM, Lambda, SNS
+* Programming Language - Python 3.11
