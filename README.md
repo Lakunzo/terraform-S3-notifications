@@ -43,4 +43,14 @@ terraform plan
 ```Bash
 terraform apply
 ```
+### Confirm SNS Subscription
+Click the link in the email to confirm the SNS subscription.
+![Subscription Email](https://i.postimg.cc/3Nfpys63/Screenshot-2025-05-19-162450.png)
+
+### Upload an object to test notification
+Upload an object to the S3 bucket to test the email notification
+![Notification Email](https://i.postimg.cc/QdDRMvp2/Screenshot-2025-05-19-163133.png)
+
+
+
 
