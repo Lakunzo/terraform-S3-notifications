@@ -18,7 +18,11 @@ git clone https://github.com/Lakunzo/terraform-S3-notifications.git
 ### Modify the variables.tf and iamrole.tf
 #### Variables.tf
 Make changes to the following variables
-* aws-access-key
-* aws-secret-key
-* aws-token-key (Optional)
-* sns-endpoint
+* aws-access-key - aws access key for programmatic functions
+* aws-secret-key - aws secret key for programmatic functions
+* aws-token-key (Optional) - aws token key for programmatic functions
+* sns-endpoint - email to subecribe and receive notifications
+
+### Keymanagement.tf
+* AWS Principal - to allow access to the account and user ID with permissions to create and administer KMS keys
+
