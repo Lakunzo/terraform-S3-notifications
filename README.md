@@ -13,4 +13,6 @@ This project is an alert notification system that send an email to the bucket ow
 ## Setup Guide
 ### Clone the Repository
 ```bash
-git clone https://github.com/
+git clone https://github.com/Lakunzo/terraform-S3-notifications.git
+```
+
