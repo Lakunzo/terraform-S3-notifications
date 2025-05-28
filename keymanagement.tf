@@ -1,5 +1,3 @@
-#data "aws_caller_identity" "current" { 
-#}
 
 resource "aws_kms_key" "bucket-key" {
   description = "Departmental S3 bucket key"

@@ -48,6 +48,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "kms-key-managemen
   }
 }
 
+#
 resource "aws_lambda_permission" "lambda-invoke-permission" {
   statement_id = "AllowExecutionFromS3"
   action = "lambda:InvokeFunction"
@@ -57,6 +58,7 @@ resource "aws_lambda_permission" "lambda-invoke-permission" {
 
 }
 
+#Invokes the event notification permissiion in S3 bucket
 resource "aws_s3_bucket_notification" "s3-notify-lambda" {
   bucket = aws_s3_bucket.mainbucket.id
   lambda_function {

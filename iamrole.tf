@@ -1,3 +1,4 @@
+#Creates an IAM role with the Lambda service 
 resource "aws_iam_role" "iam-role" {
   name = "s3-sns-role"
   assume_role_policy = jsonencode({
@@ -13,6 +14,7 @@ resource "aws_iam_role" "iam-role" {
   })
 }
 
+#Creates an IAM policy with permissions to CloudWatch, SNS, and S3 bucket
 resource "aws_iam_policy" "role-policy" {
   name = "s3-sns-policy"
 
@@ -50,6 +52,7 @@ resource "aws_iam_policy" "role-policy" {
   })
 }
 
+#Attaches the created policy to the role
 resource "aws_iam_role_policy_attachment" "role-policy-attach" {
   role = aws_iam_role.iam-role.name
   policy_arn = aws_iam_policy.role-policy.arn

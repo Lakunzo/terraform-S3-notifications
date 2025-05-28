@@ -1,3 +1,4 @@
+#Creates a lambda function with an environment variable to securely hold SNS topic ARN
 resource "aws_lambda_function" "lambda-function" {
   filename = "lambdanotify.zip"
   function_name = "s3-bucket-trigger"
